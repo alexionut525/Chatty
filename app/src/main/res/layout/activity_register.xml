@@ -11,13 +11,20 @@
         android:id="@+id/toolbar"
         layout="@layout/bar_layout"/>
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:layout_below="@id/toolbar"
         android:padding="16dp"
         android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/icon_v1" />
         
         <TextView
             android:layout_width="match_parent"
@@ -31,6 +38,7 @@
         <com.rengwuxian.materialedittext.MaterialEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/button"
             android:id="@+id/username"
             android:layout_marginTop="10dp"
             app:met_floatingLabel="normal"
@@ -65,4 +73,5 @@
             android:layout_height="wrap_content" />
 
     </LinearLayout>
+
 </RelativeLayout>
